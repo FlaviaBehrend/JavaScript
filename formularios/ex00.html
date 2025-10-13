@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <script  type="text/javascript" src="javas/ex00.js" ></script>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <p>Os formulários permitem ao usuário fazer entrada de dados no documento html. A partir desses dados que o usuário insere, scripts em linguagem web podem ter acesso e manipular esses dados. Linguagens front-end, como js e back-end como php,java, python etc. Ex: Criar um formulário para somar dois números</p>
+    <p>
+        <label for="valor1">Entre com o valor de n1:</label> 
+        <input type="text" id="primeiroValor"><br>
+        <label for="valor2">Entre com o valor de n2:</label>
+        <input type="text" id="segundoValor"><br>
+        <input type="button" value="somar" id="btnsomar" onclick="somar()">
+        <div id="resultado"></div>
+        <input type="button" value="subtrair" id="btnsubtrair" onclick="subtrair()">
+        <div id="resultado"></div><br>
+        <input type="button" value="multiplicar" id="btnmultiplicar" onclick="multiplicar()">
+        <div id="resultado"></div><br>
+        <input type="button" value="dividir" id="btndividir" onclick="dividir()">
+        <div id="resultado"></div>
+    </p>
+    
+</body>
+</html>
