@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade avaliativa</title>
-    <script  type="text/javascript" src="javas/atvAvaliativa.js" ></script>
+    <title>Notas</title>
+    <script src="js/atvAvaliativa.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="texto">
-        <label for="caixa">Digite a nota: </label>
-        <input type="text" id="caixa" name="nota">
-        <input type="button" value="Enviar" id="btnenviar" onclick="adcTexto()"><br>
-        <input type="checkbox" id="urgente" name="concordo">
-        <label for="enviarMensagem">Urgente</label>
+    <div class="caixa-nota">
+        <form>
+            <label for="nota">Digite aqui:</label>
+            <input type="text" id="nota" name="nota">
+            <input type="button" id="btn"value="Enviar" onclick="adicionarNota()">
+            <br>
+            <input type="checkbox" name="urgente" id="urgente">
+            <label for="urgente">Enviar como urgente.</label>
+        </form>
     </div>
 
-    <div class="container">
 
-    <div class="urgente">
-        <h2>Urgente</h2>
-        <input type="button" value="Remover" id="btremover" onclick="removerTextoUrgente()">
-    </div>
+    
 
-    <div class="nurgente">
-        <h2>Não Urgente</h2>
-        <input type="button" value="Remover" id="btremover" onclick="removerTextoNUrgente()">
+    <div class="notas">
+        <div class="notas_urgentes">
+            <h3>Notas Urgentes</h3>
+            <ul class="lista-urgentes"></ul>
+            <input type="button" id="btn" value="Remover" onclick="removerNotasUrgentes()">
+        </div>
+        <div class="notas_normais">
+            <h3>Notas Normais</h3>
+            <ul class="lista-normais"></ul>
+            <input type="button" id="btn" value="Remover" onclick="removerNotas()">
+        </div>
     </div>
-
-    </div>
+    <input type="button" id="btnremove" value="Remover tudo" onclick="removerTodasNotas()">
     
 </body>
+
 </html>

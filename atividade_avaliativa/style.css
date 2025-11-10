@@ -1,48 +1,50 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+.notas{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     gap: 10px;
     margin-top: 30px;
 }
-#btnenviar{
+#btn{
     border-radius: 5px;
     background-color: gray;
     padding: 5px;
     margin-left: 15px;
 }
 
-#btremover{
-    border-radius: 5px;
-    background-color: gray;
-    padding: 5px;
-    margin-left: 15px;
-}
-.urgente{
+.notas_urgentes{
     box-sizing: border-box;   
     flex: 0 0 40%;          
     border: 3px solid red;
     border-radius: 10px;
     padding: 10px;
-
+    text-align: center;
     
 }
-.nurgente{
+.notas_normais{
     box-sizing: border-box;
     flex: 0 0 40%;          
     border: 3px solid #28f100;
     border-radius: 10px;
     padding: 10px;
+    text-align: center;
 }
-.container h2{
+.notas h2{
+    
     font-size: 20px;
 }
-.container p{
-    border: solid 3px rgb(219, 206, 206);
-    border-radius: 10px ;
-    
+
+#btnremove{
+    border-radius: 5px;
+    background-color: gray;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 30px;
 }
 
+.caixa-nota{
+    background-color: rgb(199, 192, 188);
+}
