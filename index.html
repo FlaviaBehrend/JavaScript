@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas</title>
-    <script src="js/atvAvaliativa.js"></script>
+    <script src="atividade_avaliativa/js/atvAvaliativa.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="atividade_avaliativa/style.css">
 </head>
 
 <body>
 
     <div class="caixa-nota">
         <form>
-            <label for="nota">Digite aqui:</label>
+            <label for="nota">Digite:</label>
             <input type="text" id="nota" name="nota">
             <input type="button" id="btn" value="Enviar" onclick="adicionarNota()">
             <br>
 
             <input type="checkbox" id="urgente">
-            <label for="urgente">Enviar como urgente.</label>
+            <label for="urgente">Urgente</label>
         </form>
     </div>
 
@@ -33,7 +33,7 @@
         </div>
 
         <div class="notas_normais">
-            <h3>Notas Normais</h3>
+            <h3>Notas não urgentes</h3>
             <ul id="naoUrgentes"></ul>
 
             <input type="button" id="btn" value="Remover" onclick="removerNotas()">
@@ -44,5 +44,3 @@
     <input type="button" id="btnremove" value="Remover tudo" onclick="removerTodasNotas()">
 
 </body>
-
-</html>
