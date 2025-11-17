@@ -6,38 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas</title>
     <script src="js/atvAvaliativa.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="caixa-nota">
         <form>
             <label for="nota">Digite aqui:</label>
             <input type="text" id="nota" name="nota">
-            <input type="button" id="btn"value="Enviar" onclick="adicionarNota()">
+            <input type="button" id="btn" value="Enviar" onclick="adicionarNota()">
             <br>
-            <input type="checkbox" name="urgente" id="urgente">
+
+            <input type="checkbox" id="urgente">
             <label for="urgente">Enviar como urgente.</label>
         </form>
     </div>
 
-
-    
-
     <div class="notas">
+
         <div class="notas_urgentes">
             <h3>Notas Urgentes</h3>
-            <ul class="lista-urgentes"></ul>
+            <ul id="urgentes"></ul>
             <input type="button" id="btn" value="Remover" onclick="removerNotasUrgentes()">
         </div>
+
         <div class="notas_normais">
             <h3>Notas Normais</h3>
-            <ul class="lista-normais"></ul>
+            <ul id="naoUrgentes"></ul>
+
             <input type="button" id="btn" value="Remover" onclick="removerNotas()">
         </div>
+
     </div>
+
     <input type="button" id="btnremove" value="Remover tudo" onclick="removerTodasNotas()">
-    
+
 </body>
 
 </html>
