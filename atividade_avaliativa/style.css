@@ -1,50 +1,112 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    margin: 0;
+    padding: 20px;
 }
-.notas{
+
+.caixa-nota {
+    margin-bottom: 25px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#nota {
+    width: 250px;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#btn {
+    padding: 8px 16px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #005dcc;
+}
+
+.notas {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 10px;
-    margin-top: 30px;
-}
-#btn{
-    border-radius: 5px;
-    background-color: gray;
-    padding: 5px;
-    margin-left: 15px;
+    gap: 25px;
+    justify-content: center;
 }
 
-.notas_urgentes{
-    box-sizing: border-box;   
-    flex: 0 0 40%;          
-    border: 3px solid red;
-    border-radius: 10px;
-    padding: 10px;
+.notas_urgentes {
+    background: #ffb3b3;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.notas_normais {
+    background: #fcff91;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+h3 {
     text-align: center;
-    
+    margin-bottom: 12px;
 }
-.notas_normais{
-    box-sizing: border-box;
-    flex: 0 0 40%;          
-    border: 3px solid #28f100;
-    border-radius: 10px;
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo de cada nota */
+.nota {
+    background: white;
     padding: 10px;
-    text-align: center;
-}
-.notas h2{
-    
-    font-size: 20px;
-}
-
-#btnremove{
-    border-radius: 5px;
-    background-color: gray;
-    padding: 5px;
-    margin-left: 15px;
-    margin-top: 30px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.caixa-nota{
-    background-color: rgb(199, 192, 188);
+/* Botões de remover */
+.removerBtn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background: #fb5050;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.removerBtn:hover {
+    background: #d64141;
+}
+
+#btnremove {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    background: #930000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnremove:hover {
+    background: #700000;
 }
